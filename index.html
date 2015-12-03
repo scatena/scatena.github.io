@@ -241,12 +241,12 @@ URL:http://w3layouts.com
 			var iframe2 = $('#player2')[0];
 			var player2 = $f(iframe2);
 
-			var rgtButton = document.getElementById("right-button");
+			var rgtButton = document.getElementById("right-pause");
 			rgtButton.addEventListener("click", function() {
 				player1.api('pause');
 				player2.api('pause');
 			});
-			var lftButton = document.getElementById("left-button");
+			var lftButton = document.getElementById("left-pause");
 			lftButton.addEventListener("click", function() {
 				player1.api('pause');
 				player2.api('pause');
