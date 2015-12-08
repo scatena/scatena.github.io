@@ -103,7 +103,7 @@ URL:http://w3layouts.com
 	<section class="work_bg" id="work"><!-- work -->
 		<div class="work_overplate wow fadeInLeftBig" data-wow-delay="0.3s" data-wow-offset="240" data-wow-duration="1.2s">
 			<!-- start slider -->
-			<div class="container divpad">
+			<div class="container divpad work">
 				<!-- Carousel
 				Set interval to false to stop the items from automatically sliding
 				 data-pause="hover";  data-pause="false" for no mouse action
@@ -170,7 +170,7 @@ URL:http://w3layouts.com
 			<div class="row footer">
 				<div class="copy text-center">
 					<div>
-						<p class="link">&#169; 2015 Paulo Scatena | Connect:</p>
+						<p class="link"><span class="copyright fa fa-copyright"></span>2015 Paulo Scatena&nbsp;&nbsp;|&nbsp;&nbsp;Connect:</p>
 					</div>
 					<div class="soc_icons">
 						<ul class="list-unstyled text-center">
@@ -180,9 +180,8 @@ URL:http://w3layouts.com
 						</ul>	
 					</div>
 					<div>
-						<p class="link">| Based on&nbsp;<a href="https://w3layouts.com/" target="_blank">W3Layouts</a></p>
+						<p class="link">|&nbsp;&nbsp;Based on&nbsp;<a href="https://w3layouts.com/" target="_blank">W3Layouts</a><a id="homeArrow" class="fa fa-arrow-up" href="#home" alt="Back to Top"></a></p>
 					</div>
-					<a href="#home" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"> </span></a>
 				</div>
 			</div>
 		</div>
@@ -214,6 +213,12 @@ URL:http://w3layouts.com
 		$("#hireContact").click(function() {
 				$root.animate({
 						scrollTop: $("#contact").offset().top
+				}, 800);
+				return false;
+		});
+		$("#homeArrow").click(function() {
+				$root.animate({
+						scrollTop: $("#home").offset().top
 				}, 800);
 				return false;
 		});
@@ -259,62 +264,6 @@ URL:http://w3layouts.com
 		});
 	</script>
 
-	<!-- menu drop down - disabled for now 
-	<script>
-		$(function() {
-			var pull 		= $('#pull');
-				menu 		= $('nav ul');
-				menuHeight	= menu.height();
-			$(pull).on('click', function(e) {
-				e.preventDefault();
-				menu.slideToggle();
-			});
-			$(window).resize(function(){
-						var w = $(window).width();
-						if(w > 320 && menu.is(':hidden')) {
-							menu.removeAttr('style');
-						}
-				});
-		});
-	</script> -->
-	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
-
-
-
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
-<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
-
-<!-- start-smoth-scrolling 
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
-<!- start-smoth-scrolling -->
-<!--hexa smooth scrooling
-			<script type="text/javascript">
-				$(function() {
-					$('a[href*=#]:not([href=#])').click(function() {
-						if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-			
-							var target = $(this.hash);
-							target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-							if (target.length) {
-								$('html,body').animate({
-									scrollTop: target.offset().top
-								}, 1000);
-								return false;
-							}
-						}
-					});
-				});
-		</script>
-		-->	
 
 </body>
 
