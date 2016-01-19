@@ -55,15 +55,20 @@ URL:http://w3layouts.com
 				<div class="h_logo">
 					<a href="#"><img src="img/bold_logo.png" alt="" class="img.responsive"/></a>
 				</div>
-				<!-- invisible for now-->
-				<nav class="top-nav invisible">
+				<div class="h_slogan">
+					<h5><span>P</span>aulo <span>S</span>catena</h5>
+					<h6>Animation: Engineered</h6>
+				</div>
+				<nav class="top-nav">
 					<ul class="top-nav nav_list">
-						<li class="h_itens"><a href="#about">who am I?</a></li>
-						<li class="h_itens"><a href="blog.html">downloads</a></li>
-						<li class="h_itens"><a href="#contact">blog</a></li>
-						<li class="lang">
-							<a href="#contact">Pt-Br</a>
-							<a href="#contact">En</a></li>
+						<li class="h_itens"><a href="about.html">who am I?</a></li>
+						<li class="h_itens"><a href="goodies.html">downloads</a></li>
+						<li class="h_itens"><a href="https://phscatena.wordpress.com/" target="_blank">blog</a></li>
+						<!-- invisible for now-->
+						<li class="lang invisible">
+							<span><a href="#contact">-Pt-Br-</a></span>
+							<span>-En-</span>
+						</li>
 					</ul>
 					<a href="#" id="pull"><i class="fa fa-bars fa-2x"></i></a>
 				</nav>
@@ -80,7 +85,7 @@ URL:http://w3layouts.com
 					<img class="pull-right" src="img/pro_right.png" alt="" class="responsive"/>
 					<h2><span>P</span>aulo <span>S</span>catena</h2>
 					
-					<h4><a tabindex="0" role="button" title="An·i·ma·tion" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="Bringing visions to life.">Animator</a> &middot; <a tabindex="0" role="button" title="En·gi·neer·ing" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="Overcoming constraints by means of technology.">Engineer</a></h4>
+					<h4><a class="bubble" tabindex="0" role="button" title="An·i·ma·tion" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="Bringing visions to life.">Animator</a> &middot; <a tabindex="0" role="button" title="En·gi·neer·ing" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="Overcoming constraints by means of technology.">Engineer</a></h4>
 				</div>
 				<div class="about_text">
 					<p class="first">Maybe I can help you. Because I <strong>care</strong>.</p>
@@ -114,18 +119,38 @@ URL:http://w3layouts.com
 					<ol class="carousel-indicators" id="center-pause">
 						<li data-target="#slideCarousel" data-slide-to="0" class="active"></li>
 						<li data-target="#slideCarousel" data-slide-to="1"></li>
+						<li data-target="#slideCarousel" data-slide-to="2"></li>
 					</ol>
 
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner" role="listbox">
+						<div id="viewport">
+						</div>
 						<div class="item active">
 							<div class="js-video widescreen">
-								<iframe id="player1" class="center-block" src="https://player.vimeo.com/video/120375229?api=1&amp;color=44b5e7&amp;byline=0&amp;portrait=0&amp;player_id=player1" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								<iframe id="player1" class="center-block" src="https://player.vimeo.com/video/150454094?api=1&amp;color=44b5e7&amp;byline=0&amp;portrait=0&amp;player_id=player1" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</div>
+							<div class="carousel-icon">
+								<li><a class="bubble" tabindex="0" role="button" title="Heaven's Nest" data-toggle="popover" data-placement="top" data-content="Fully hand drawn animation test inspired by physical theater studies, submitted for 11SecondClub monthly competition."><i class="fa fa-info"></i></a></li>
+								<li><a href="https://vimeo.com/150454094" target="_blank"><i class="fa fa-external-link"></i></a></li>
 							</div>
 						</div>
 						<div class="item">
 							<div class="js-video widescreen">
-								<iframe id="player2" class="center-block" src="https://player.vimeo.com/video/70698428?api=1&amp;color=44b5e7&amp;byline=0&amp;portrait=0&amp;player_id=player2" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								<iframe id="player2" class="center-block" src="https://player.vimeo.com/video/120375229?api=1&amp;color=44b5e7&amp;byline=0&amp;portrait=0&amp;player_id=player2" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</div>
+							<div class="carousel-icon">
+								<li><a class="bubble" tabindex="0" role="button" title="MoCap Demo Reel" data-toggle="popover" data-trigger="focus" data-placement="top" data-content="Some projects I have worked on as motion capture supervisor and animator."><i class="fa fa-info"></i></a></li>
+								<li><a href="https://vimeo.com/120375229" target="_blank"><i class="fa fa-external-link"></i></a></li>
+							</div>
+						</div>
+						<div class="item">
+							<div class="js-video widescreen">
+								<iframe id="player3" class="center-block" src="https://player.vimeo.com/video/70698428?api=1&amp;color=44b5e7&amp;byline=0&amp;portrait=0&amp;player_id=player3" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</div>
+							<div class="carousel-icon">
+								<li><a class="bubble" tabindex="0" role="button" title="Character Animation Demo Reel" data-toggle="popover" data-trigger="focus" data-placement="top" data-content="Showreel of animation done on conclusion of Animation Mentor program."><i class="fa fa-info"></i></a></li>
+								<li><a href="https://vimeo.com/70698428" target="_blank"><i class="fa fa-external-link"></i></a></li>
 							</div>
 						</div>
 					</div>
@@ -174,13 +199,13 @@ URL:http://w3layouts.com
 					</div>
 					<div class="soc_icons">
 						<ul class="list-unstyled text-center">
-							<li><a href="https://www.facebook.com/phscatena" target="_blank"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="https://vimeo.com/scatena" target="_blank"><i class="fa fa-vimeo"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/phscatena" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="https://www.facebook.com/phscatena" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://vimeo.com/scatena" target="_blank" title="Vimeo"><i class="fa fa-vimeo"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/phscatena" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
 						</ul>	
 					</div>
 					<div>
-						<p class="link">|&nbsp;&nbsp;Based on&nbsp;<a href="https://w3layouts.com/" target="_blank">W3Layouts</a><a id="homeArrow" class="fa fa-arrow-up" href="#home" alt="Back to Top"></a></p>
+						<p class="link">|&nbsp;&nbsp;Based on&nbsp;<a href="https://w3layouts.com/" target="_blank">W3Layouts</a><a id="homeArrow" class="fa fa-arrow-up" href="#home" alt="Back to Top" title="Back to Top"></a></p>
 					</div>
 				</div>
 			</div>
@@ -207,6 +232,25 @@ URL:http://w3layouts.com
 		new WOW().init();
 	</script>
 
+	<!-- Hamburger dropdown -->
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			$(window).resize(function(){
+				var w = $(window).width();
+				if(w > 320 && menu.is(':hidden')) {
+					menu.removeAttr('style');
+				}
+			});
+		});
+	</script>
+
 	<!-- Smooth Scrolling -->
 	<script type="text/javascript">
 		var $root = $('html, body');
@@ -227,7 +271,10 @@ URL:http://w3layouts.com
 	<!-- Tooltip -->
 	<script>
 		$(function () {
-			$('[data-toggle="popover"]').popover()
+			var options = {
+				viewport: '#viewport', animation: 'true'
+			};
+			$('[data-toggle="popover"]').popover(options)
 		})
 		/* this hides on scroll; might be bad UX */
 		/*onscroll=function(){$('[data-toggle="popover"]').popover('hide')};*/
@@ -246,20 +293,26 @@ URL:http://w3layouts.com
 			var iframe2 = $('#player2')[0];
 			var player2 = $f(iframe2);
 
+			var iframe3 = $('#player3')[0];
+			var player3 = $f(iframe3);
+
 			var rgtButton = document.getElementById("right-pause");
 			rgtButton.addEventListener("click", function() {
 				player1.api('pause');
 				player2.api('pause');
+				player3.api('pause');
 			});
 			var lftButton = document.getElementById("left-pause");
 			lftButton.addEventListener("click", function() {
 				player1.api('pause');
 				player2.api('pause');
+				player3.api('pause');
 			});
 			var lftButton = document.getElementById("center-pause");
 			lftButton.addEventListener("click", function() {
 				player1.api('pause');
 				player2.api('pause');
+				player3.api('pause');
 			});
 		});
 	</script>
