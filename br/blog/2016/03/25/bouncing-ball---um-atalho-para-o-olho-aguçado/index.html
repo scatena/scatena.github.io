@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Bouncing Ball - Um atalho para o olho aguçado &middot; Paulo Scatena</title>
+    <meta name="generator" content="Hugo 0.15" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Paulo Scatena">
+    
+      <meta name="description" content="It&#39;s me blog">
+    
+    
+    <link rel="icon" href="http://www.scatena.tv/br/blog/favicon.ico">
+    <link rel="apple-touch-icon" href="http://www.scatena.tv/br/blog/apple-touch-icon.png" />
+    <link rel="stylesheet" href="http://www.scatena.tv/br/blog/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <meta property="og:title" content="Bouncing Ball - Um atalho para o olho aguçado" />
+<meta property="og:description" content="O exercício mais básico de animação é a bouncing ball : animar uma bolinha pulando. Literalmente básico. Já que a unidade mais fundamental do universo, a mais forte, a mais sensual, é ela: A ESFERA (vide base científica). Os animadores, criaturas inquietas, colocam a esfera em movimento. Nasce a bolinha saltitante. Poético. Mas essa bolinha, apesar de tão básica, não raro passa como mero exercício e é deixada para trás. Os ótimos animadores nunca esquecem dela, e seus princípios transparecem em suas cenas." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.scatena.tv/br/blog/2016/03/25/bouncing-ball---um-atalho-para-o-olho-agu%C3%A7ado" />
+
+
+<meta property="og:updated_time" content="2016-03-25T17:02:13-02:00"/>
+
+
+
+
+
+
+
+
+
+
+    
+    
+<meta itemprop="name" content="Bouncing Ball - Um atalho para o olho aguçado">
+<meta itemprop="description" content="O exercício mais básico de animação é a bouncing ball : animar uma bolinha pulando. Literalmente básico. Já que a unidade mais fundamental do universo, a mais forte, a mais sensual, é ela: A ESFERA (vide base científica). Os animadores, criaturas inquietas, colocam a esfera em movimento. Nasce a bolinha saltitante. Poético. Mas essa bolinha, apesar de tão básica, não raro passa como mero exercício e é deixada para trás. Os ótimos animadores nunca esquecem dela, e seus princípios transparecem em suas cenas.">
+
+
+<meta itemprop="dateModified" content="2016-03-25T17:02:13-02:00" />
+<meta itemprop="wordCount" content="992">
+
+
+
+<meta itemprop="keywords" content="pensamentos,animação,blog,diy,heavens-nest," />
+
+    
+
+  <meta name="twitter:card" content="summary"/>
+
+
+
+<meta name="twitter:title" content="Bouncing Ball - Um atalho para o olho aguçado"/>
+<meta name="twitter:description" content="O exercício mais básico de animação é a bouncing ball : animar uma bolinha pulando. Literalmente básico. Já que a unidade mais fundamental do universo, a mais forte, a mais sensual, é ela: A ESFERA (vide base científica). Os animadores, criaturas inquietas, colocam a esfera em movimento. Nasce a bolinha saltitante. Poético. Mas essa bolinha, apesar de tão básica, não raro passa como mero exercício e é deixada para trás. Os ótimos animadores nunca esquecem dela, e seus princípios transparecem em suas cenas."/>
+
+
+
+</head>
+<body>
+<div class="container">
+
+
+<div id="container">
+	<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="http://www.scatena.tv/br/blog/" id="logo"><i class="logo" style="background-image: url('http://www.scatena.tv/br/blog/css/images/logo.png')"></i></a>
+      <nav id="sub-nav">
+        <div class="profile" id="profile-nav">
+          <a id="profile-anchor" href="javascript:;"><img class="avatar" src="http://www.scatena.tv/br/blog/css/images/avatar.png"><i class="fa fa-caret-down"></i></a>
+        </div>
+      </nav>
+      <nav id="main-nav">
+         
+           
+            <a class="main-nav-link" href="">-En-</a>
+          
+        
+          <span class="main-nav-link">-Pt-Br-</span>
+      </nav>
+    </div>
+  </div>
+
+</header>
+
+   	
+   	<div class="outer">
+	    <aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      <img id="avatar" src="http://www.scatena.tv/br/blog/css/images/avatar.png">
+      <h2 id="name">Paulo Scatena</h2>
+      <h3 id="title">Explorador de coisa demais.</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>São Paulo / Brasil</span>
+      
+          <a class="profile-link" href="http://www.scatena.tv/pt-br/sobre.html">
+              Sobre
+          </a>
+      
+      
+          <a class="profile-link" href="http://www.scatena.tv/pt-br/">
+              Website
+          </a>
+      
+    </div>
+    <div class="contact-info profile-block">
+      <table class="contact-list">
+        <tr>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//vimeo.com/scatena" target="_blank" title="Vimeo"><i class="fa fa-vimeo"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//linkedin.com/in/phscatena" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//facebook.com/phscatena" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></td>
+
+
+
+
+          <td><a href="" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</aside>
+
+	    <section id="main">
+    <article id="blogpost" class="article article-type-page" itemscope="" itemprop="blogPost">
+        <div class="article-inner">
+            
+                
+                <img src="http://www.scatena.tv/br/blog/banners/bouncing_ball.jpg" class="article-banner">
+                
+            
+
+            <header class="article-header">
+    <a href="http://www.scatena.tv/br/blog/2016/03/25/bouncing-ball---um-atalho-para-o-olho-agu%C3%A7ado">
+    <h1 class="article-title" itemprop="name">
+        Bouncing Ball - Um atalho para o olho aguçado
+    </h1>
+    </a>
+    <div class="article-meta">
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2016-03-25 17:02:13 -0200 -0200" itemprop="datePublished">25/03/2016</time>
+            &middot;
+            992
+            palavras
+            &middot;
+            5
+            minutos de leitura
+        </div>
+
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                <a class="article-category-link" href="http://www.scatena.tv/br/blog/categories/pensamentos">pensamentos</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                <a class="article-category-link" href="http://www.scatena.tv/br/blog/tags/anima%c3%a7%c3%a3o">animação</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+            <div class="article-entry" itemprop="articleBody">
+                
+
+<p>O exercício mais básico de animação é a <em>bouncing ball</em> : animar uma bolinha pulando.</p>
+
+<p>Literalmente <strong>básico</strong>. Já que a unidade mais fundamental do universo, a mais forte, a mais sensual, é ela:</p>
+
+
+<figure >
+    
+        <img src="http://www.scatena.tv/img/blog/bouncing_escher.jpg" />
+    
+    
+</figure>
+
+
+<p><center>A <strong>ESFERA</strong> (vide <a href="https://www.youtube.com/watch?v=HVXEi1BYmXQ">base científica</a>).</center></p>
+
+<p>Os animadores, criaturas inquietas, colocam a esfera em movimento. Nasce a bolinha saltitante. Poético.</p>
+
+<p>Mas essa bolinha, apesar de tão básica, não raro passa como mero exercício e é deixada para trás.</p>
+
+<p>Os ótimos animadores nunca esquecem dela, e seus princípios transparecem em suas cenas.</p>
+
+<p>Mas ninguém nasce ótimo.</p>
+
+<p>E a maior parte dos animadores está ocupada demais com tudo que precisam acertar: as poses, as silhuetas, os arcos, antecipações, <em>overlap</em>, <em>constraints</em> etc etc etc.</p>
+
+<p>Por isso, o que mais se vê de animação por aí é meramente..</p>
+
+<p><br></p>
+
+<h4 id="bom-o-bastante:64362d7a43b71d3a1ea4ef5d1189b67d">&ldquo;Bom o bastante&rdquo;</h4>
+
+<p>Todo animador já teve um momento em que sua cena funciona, seus amigos e família acham que está super legal, mas seus colegas animadores dão aquele olhar de &lsquo;é.. tá <em>OK</em>&rsquo;.</p>
+
+<p>Eu trabalhei um bom tempo produzindo com prazos ínfimos a partir de captura de movimento, e sentia que tudo o que eu produzia nunca era ótimo. Era apenas &ldquo;bom o bastante&rdquo;.</p>
+
+<p>Mas eu sou chato e queria ser ótimo.</p>
+
+<p>Durante um curso, um ano atrás, na iAnimate, eu comecei uma cena. Eu até tinha tempo e queria que ficasse <strong>ótimo</strong>. Mas reparei que já nem sabia como. Meu olhar estava viciado no &ldquo;bom o bastante&rdquo;.</p>
+
+<p>Eu então eu vi a luz. Bem nesse <a href="https://vimeo.com/121632004">vídeo aqui</a>.</p>
+
+<p>Trent Corey é um animador incrível. Desenha muito, então ver que ele começa sua cena com &ldquo;rascunhos&rdquo; não foi surpresa.</p>
+
+<p>Mas aí eu vi como ele faz o blocking: é uma bolinha saltitante, no 3d, que sozinha já tem vida: transpira energia, intenção, emoção!</p>
+
+<p>Aí reparei que se você pode dar vida a uma bolinha saltitante, você pode dar vida a <strong>qualquer coisa</strong>.</p>
+
+<p><br></p>
+
+<h4 id="rumo-ao-essencial:64362d7a43b71d3a1ea4ef5d1189b67d">Rumo ao essencial</h4>
+
+<p>Um personagem simples tem: quadril, peito, cabeça, duas pernas e dois braços. Já são sete coisas te pedindo atenção.</p>
+
+<p>E aí, por onde começar, pra onde ir?</p>
+
+<p>Dá pra cortar essa dúvida deixando apenas <strong>uma</strong> coisa pra olhar.</p>
+
+<p>Simplificando, você entra em contato com o que é mais <strong>essencial</strong>.</p>
+
+<p>E se você está mais próximo da essência, você pode mexer onde <strong>importa</strong>.</p>
+
+<p><video autoplay loop muted controls><source type="video/mp4" src="http://www.scatena.tv/vid/blog/bouncing_demo.mp4"></video></p>
+
+<h6 id="center-alterando-coreografia-e-ritmo-com-a-ajuda-da-bolinha-center:64362d7a43b71d3a1ea4ef5d1189b67d"><center> Alterando coreografia e ritmo com a ajuda da bolinha </center></h6>
+
+<p><br></p>
+
+<h4 id="o-fácil-é-medíocre:64362d7a43b71d3a1ea4ef5d1189b67d">O fácil é medíocre</h4>
+
+<p>Quando um diretor fala &lsquo;esse personagem tem que ser feliz!&rsquo;</p>
+
+<p>A coisa mais fácil é jogar um sorrisão.</p>
+
+
+<figure >
+    
+        <img src="http://www.scatena.tv/img/blog/bouncing_yay.jpg" alt="Yaaay!" />
+    
+    
+</figure>
+
+
+<p>Tente com si próprio: pareça feliz.</p>
+
+<p>Agora segure o sorriso e tente de novo. Você sente o corpo procurando formas de expressar isso? O pescoço cresce, o peito se abre&hellip;</p>
+
+<p>Se você andar assim, provavelmente será mais leve e confiante. Mesmo sem um sorriso, ou mesmo sem a pose, vão saber que você está feliz.</p>
+
+<p>O <strong>movimento</strong> fala.</p>
+
+<p>E isso é que mais importa aqui, é o que importa para nós animadores.</p>
+
+<p>Como o movimento <strong>conta uma história</strong>!</p>
+
+<p>Buscar essas soluções é menos óbvio, é mais difícil. E por isso mesmo, é muito mais interessante.</p>
+
+<p><video autoplay loop muted controls><source type="video/mp4" src="http://www.scatena.tv/vid/blog/bouncing_balls.mp4"></video></p>
+
+<h6 id="center-cada-bolinha-com-sua-história-center:64362d7a43b71d3a1ea4ef5d1189b67d"><center> Cada bolinha com sua história </center></h6>
+
+<p><br></p>
+
+<h4 id="keep-it-simple:64362d7a43b71d3a1ea4ef5d1189b67d"><em>Keep it simple</em></h4>
+
+<p>Conhecia um animador que sempre se preocupava com detalhes, enquanto a essência estava fraca.</p>
+
+<p>Mesmo recebendo orientações pra focar no que importava, esse cara seguia se perdendo. Era só o supervisor pedir uma pose mais forte que já pintava o receio de mexer em algo e piorar o que já está lá.</p>
+
+<p>Esse cara era eu.</p>
+
+<p>Trazer de volta a bolinha saltitante, fisicamente, se provou uma maneira de desenvolver mais rápido o olhar crítico.</p>
+
+<p>Ela torna mais fácil <strong>sentir</strong> o que se pode melhorar. E há menos receio de forçar a animação pra lá e pra cá, de explorar.</p>
+
+<p>E a cena roda mais rápido com uma bolinha.</p>
+
+<p>Então abuse dela pra fugir das distrações: esqueça aquele cotovelo atravessando a malha, aqueles dedos retorcidos, aquele pé ficando pra trás, aqueles olhos vesgos.</p>
+
+<p>Isso tudo te rouba atenção, te tira o foco.</p>
+
+<p>Já a bolinha é impassível.</p>
+
+<p>Mas ela é sua amiga. Aceite sua ajuda.</p>
+
+<p><video autoplay loop muted controls><source type="video/mp4" src="http://www.scatena.tv/vid/blog/bouncing_badmocap1.mp4"></video>
+<video autoplay loop muted controls><source type="video/mp4" src="http://www.scatena.tv/vid/blog/bouncing_badmocap2.mp4"></video></p>
+
+<h6 id="center-usando-a-bolinha-para-transformar-mocap-ruim-em-algo-mais-interessante-center:64362d7a43b71d3a1ea4ef5d1189b67d"><center> Usando a bolinha para transformar mocap ruim em algo mais interessante </center></h6>
+
+<p><br></p>
+
+<h4 id="um-passo-pra-trás-dois-pra-frente:64362d7a43b71d3a1ea4ef5d1189b67d">Um passo pra trás, dois pra frente</h4>
+
+<p>Pra quem começa uma cena do zero, é fácil, até natural, ter em mente a essência do movimento.</p>
+
+<p>Mas com o aumento do uso de mocap, é exigido dos animadores uma boa maturidade no olhar &ndash; saber o que usar e o que jogar fora. Coisa que vem apenas com o tempo.</p>
+
+<p>Aí introduzir uma bolinha na cena pode parecer acrescentar trabalho.</p>
+
+<p><em>&ldquo;Eu é que não tenho tempo pra isso.&rdquo;</em></p>
+
+<p>Você não tem tempo é de corrigir 30 poses num personagem de 47 controladores pra reparar que está com uma animação sem graça na mão.</p>
+
+<p>É essa preguiça de dar um passo pra trás e ver o quadro geral que faz a maior parte da animação recente parecer genérica, sem vida.</p>
+
+<p>Cada vez é mais fácil ter boas referências (mocap ou vídeo), e cabe ao animador passar a sua visão, colocar o seu tempero.</p>
+
+<p>A bolinha é uma forma de você explorar mais rápido, ver os erros mais rápido, corrigir mais rápido, <strong>melhorar</strong> mais rápido.</p>
+
+<p>Ela te ajuda a se desapegar de preocupações e ficar mais livre para ousar &ndash; e isso é muito bom.</p>
+
+<p>E se você conseguir transmitir a emoção básica da cena com uma simples bolinha, isso vai tornar o resultado tão mais forte, e tão mais gostoso de assistir.</p>
+
+<p><br></p>
+
+<h4 id="no-fim-é-apenas-uma-ferramenta:64362d7a43b71d3a1ea4ef5d1189b67d">No fim é apenas uma ferramenta</h4>
+
+<p>A bouncing ball não é a resposta mágica para nada. Mas está a seu dispor.</p>
+
+<p><strong>Eu</strong> melhorei muito <strong>meu</strong> olhar voltando ao exercício mais fundamental da animação.</p>
+
+<p>E já utilizei esse método com alguns colegas que estavam aprendendo e notei uma clara evolução.</p>
+
+<p>É necessário ter em mente que é apenas parte do processo. Algo que <strong>pode</strong> ajudar e <strong>não deve</strong> tomar muito tempo. A bolinha é um atalho para o que é essencial, não um desvio sinuoso.</p>
+
+<p>Por isso, eu voto pelo retorno da bolinha saltitante.</p>
+
+<p>E os detalhes que fiquem pra depois.</p>
+
+            </div>
+            <footer class="article-footer">
+    <a data-url="http://www.scatena.tv/br/blog/2016/03/25/bouncing-ball---um-atalho-para-o-olho-agu%C3%A7ado" data-id="64362d7a43b71d3a1ea4ef5d1189b67d" class="article-share-link">
+        Compartilhe
+    </a>
+    
+    <a href="http://www.scatena.tv/br/blog/2016/03/25/bouncing-ball---um-atalho-para-o-olho-agu%C3%A7ado/#disqus_thread" class="article-comment-link">
+        Comentários
+    </a>
+    
+</footer>
+
+        </div>
+
+        
+<nav id="article-nav">
+    
+    <a href="http://www.scatena.tv/br/blog/2016/03/02/heavens-nest---um-sucesso-sutil" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Anterior
+      </strong>
+      <div class="article-nav-title">Heaven&#39;s Nest - Um Sucesso Sutil</div>
+    </a>
+    
+
+    
+</nav>
+
+
+    </article>
+    <section id="comments">
+        <div id="disqus_thread">
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'scatena';
+    var disqus_identifier = 'http:\/\/www.scatena.tv\/br\/blog\/2016\/03\/25\/bouncing-ball---um-atalho-para-o-olho-agu%C3%A7ado';
+    var disqus_title = 'Bouncing Ball - Um atalho para o olho aguçado';
+    var disqus_url = 'http:\/\/www.scatena.tv\/br\/blog\/2016\/03\/25\/bouncing-ball---um-atalho-para-o-olho-agu%C3%A7ado';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+    </section>
+
+</section>
+
+	    <aside id="sidebar">
+	<div class="google_search">
+		<script>
+		  (function() {
+		    var cx = '006170203056564993741:gdehfamtcf4';
+		    var gcse = document.createElement('script');
+		    gcse.type = 'text/javascript';
+		    gcse.async = true;
+		    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+		        '//cse.google.com/cse.js?cx=' + cx;
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(gcse, s);
+		  })();
+		</script>
+		<gcse:search></gcse:search>
+	</div>
+    
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">Categorias</h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="http://www.scatena.tv/br/blog/categories/pensamentos">
+                    pensamentos
+                </a>
+                <span class="category-list-count">4</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+    
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tags
+    </h3>
+    <div class="widget tagcloud">
+        
+        <a href="http://www.scatena.tv/br/blog/tags/anima%c3%a7%c3%a3o" style="font-size: 12px;">animação</a>
+        
+        <a href="http://www.scatena.tv/br/blog/tags/blog" style="font-size: 12px;">blog</a>
+        
+        <a href="http://www.scatena.tv/br/blog/tags/diy" style="font-size: 12px;">diy</a>
+        
+        <a href="http://www.scatena.tv/br/blog/tags/heavens-nest" style="font-size: 12px;">heavens-nest</a>
+        
+    </div>
+</div>
+
+
+
+
+
+</aside>
+
+	</div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016
+      Scatena | Criado em <a href="//gohugo.io">Hugo</a>. Tema-base por <a href="http://github.com/ppoffice">PPOffice</a>.
+    </div>
+  </div>
+  <div id="toTop" class="fa fa-arrow-up"></div>
+</footer>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-73966935-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://www.scatena.tv/br/blog/fancybox/jquery.fancybox.pack.js"></script>
+<script src="http://www.scatena.tv/br/blog/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<!-- MathJax -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>
