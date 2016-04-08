@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workflow on Paulo Scatena</title>
+    <link>http://www.scatena.tv/blog/tags/workflow/</link>
+    <description>Recent content in Workflow on Paulo Scatena</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Apr 2016 19:49:21 -0200</lastBuildDate>
+    <atom:link href="http://www.scatena.tv/blog/tags/workflow/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>MoBu Tips &amp; Tricks - Mouse Capture</title>
+      <link>http://www.scatena.tv/blog/2016/04/08/mobu-tips--tricks---mouse-capture</link>
+      <pubDate>Fri, 08 Apr 2016 19:49:21 -0200</pubDate>
+      
+      <guid>http://www.scatena.tv/blog/2016/04/08/mobu-tips--tricks---mouse-capture</guid>
+      <description>&lt;p&gt;In response to a friend&amp;rsquo;s request, I&amp;rsquo;m sharing a way for roughing in animation using the movement from your mouse or tablet in MotionBuilder.&lt;/p&gt;
+
+&lt;p&gt;Besides being helpful for the bouncing ball workflow I mentioned in my last post, having access to your mouse or tablet within MotionBuilder can be a useful resource for live performances.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//player.vimeo.com/video/162125908&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;p&gt;I&amp;rsquo;ll soon be sharing a way to this in Maya!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bouncing Ball - A shortcut to keen eyes</title>
+      <link>http://www.scatena.tv/blog/2016/03/25/bouncing-ball---a-shortcut-to-keen-eyes</link>
+      <pubDate>Fri, 25 Mar 2016 17:02:13 -0200</pubDate>
+      
+      <guid>http://www.scatena.tv/blog/2016/03/25/bouncing-ball---a-shortcut-to-keen-eyes</guid>
+      <description>
+
+&lt;p&gt;The most basic animation exercise is the bouncing ball.&lt;/p&gt;
+
+&lt;p&gt;Literally &lt;strong&gt;basic&lt;/strong&gt;, because it involves the most fundamental, most interesting, most robust, most sensual unit of all universe:&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://www.scatena.tv/img/blog/bouncing_escher.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;&lt;center&gt;The &lt;strong&gt;SPHERE&lt;/strong&gt; (according to &lt;a href=&#34;https://www.youtube.com/watch?v=HVXEi1BYmXQ&#34;&gt;science&lt;/a&gt;).&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Animators, those restless creatures, put the sphere in motion. That&amp;rsquo;s how bouncing balls are born. Poetic.&lt;/p&gt;
+
+&lt;p&gt;But this little ball, fundamental as it is, often becomes just an exercise and is left behind.&lt;/p&gt;
+
+&lt;p&gt;Great animators never forget about it, and its principles are apparent in their scenes.&lt;/p&gt;
+
+&lt;p&gt;But no one is born great.&lt;/p&gt;
+
+&lt;p&gt;Most animators are too busy with everything they need to get right: poses, silhouettes, arcs, anticipations, overlap, constraints etc etc etc.&lt;/p&gt;
+
+&lt;p&gt;So, what you see most in animation is just..&lt;/p&gt;
+
+&lt;h4 id=&#34;good-enough:64362d7a43b71d3a1ea4ef5d1189b67d&#34;&gt;&amp;ldquo;Good enough&amp;rdquo;&lt;/h4&gt;
+
+&lt;p&gt;Every animator has once reached a moment when his scene works, his friends and family think it&amp;rsquo;s super cool, but his fellow animators give that look of &amp;lsquo;it is.. well.. &lt;em&gt;OK&lt;/em&gt;&amp;rsquo;.&lt;/p&gt;
+
+&lt;p&gt;I did a lot of work under extremely thigh deadlines, using motion capture, and I felt that everything I delivered was never great. It was just &amp;ldquo;good enough.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;But I&amp;rsquo;m stubborn and wanted to be great.&lt;/p&gt;
+
+&lt;p&gt;A year ago, on a workshop at iAnimate, I started a scene. I had time and wanted it to be &lt;strong&gt;great&lt;/strong&gt;. But I noticed that I didn&amp;rsquo;t even know how to do it. My eyes were too accustomed to the &amp;ldquo;good enough&amp;rdquo; standard.&lt;/p&gt;
+
+&lt;p&gt;Then I saw the light. Right in this &lt;a href=&#34;https://vimeo.com/121632004&#34;&gt;video here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Trent Corey is an amazing animator. His drawings are great, so it was no surprise to see that he begins his scene with &lt;em&gt;&amp;ldquo;drafts&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;But then I saw how he blocks it out: he uses a 3D bouncing ball, which by itself feel alive: it conveys intention and emotion!&lt;/p&gt;
+
+&lt;p&gt;I then realized that if you can breath life into a bouncing ball, you can breath life into &lt;strong&gt;anything&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;finding-what-s-essential:64362d7a43b71d3a1ea4ef5d1189b67d&#34;&gt;Finding what&amp;rsquo;s essential&lt;/h4&gt;
+
+&lt;p&gt;A simple character has: a hip, a chest, a head, two legs and two arms. Already you have seven things to pay attention to.&lt;/p&gt;
+
+&lt;p&gt;So, where to start, where to go?&lt;/p&gt;
+
+&lt;p&gt;One can eliminate this doubt by leaving only &lt;strong&gt;one&lt;/strong&gt;  thing to look at.&lt;/p&gt;
+
+&lt;p&gt;Simplifying, you get in touch with what is most &lt;strong&gt;essential&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;And if you&amp;rsquo;re nearer to its essence, you can act where it &lt;strong&gt;matters&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;video autoplay loop muted controls&gt;&lt;source type=&#34;video/mp4&#34; src=&#34;http://www.scatena.tv/vid/blog/bouncing_demo.mp4&#34;&gt;&lt;/video&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;center-altering-choreography-and-rhythm-via-a-bouncing-ball-center:64362d7a43b71d3a1ea4ef5d1189b67d&#34;&gt;&lt;center&gt; Altering choreography and rhythm via a bouncing ball &lt;/center&gt;&lt;/h6&gt;
+
+&lt;h4 id=&#34;what-s-easy-is-mediocre:64362d7a43b71d3a1ea4ef5d1189b67d&#34;&gt;What&amp;rsquo;s easy is mediocre&lt;/h4&gt;
+
+&lt;p&gt;When a director says &amp;lsquo;make this character happy!&amp;rsquo;&lt;/p&gt;
+
+&lt;p&gt;The easiest thing to do it to throw a big smile at it.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://www.scatena.tv/img/blog/bouncing_yay.jpg&#34; alt=&#34;Yaaay!&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Try it yourself: &lt;em&gt;look&lt;/em&gt; happy.&lt;/p&gt;
+
+&lt;p&gt;Now make that grin disappear and try again. Can you feel your body looking for ways to express itself? The neck straightens, the chest opens &amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;If you walk with that attitude, you&amp;rsquo;ll probably be lighter and more confident. Even without a smile, or even without holding a pose, people will know that you are happy.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Movement&lt;/strong&gt; speaks.&lt;/p&gt;
+
+&lt;p&gt;And that&amp;rsquo;s what matters most here. It is what matters to us animators.&lt;/p&gt;
+
+&lt;p&gt;How do the movement &lt;strong&gt;tells a story&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;p&gt;Looking for these solutions will be less obvious, more difficult. And for that same reason, it will be much more interesting.&lt;/p&gt;
+
+&lt;p&gt;&lt;video autoplay loop muted controls&gt;&lt;source type=&#34;video/mp4&#34; src=&#34;http://www.scatena.tv/vid/blog/bouncing_balls.mp4&#34;&gt;&lt;/video&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;center-to-each-ball-its-own-story-center:64362d7a43b71d3a1ea4ef5d1189b67d&#34;&gt;&lt;Center&gt; To each ball its own story &amp;lt;/ center&amp;gt;&lt;/h6&gt;
+
+&lt;h4 id=&#34;keep-it-simple:64362d7a43b71d3a1ea4ef5d1189b67d&#34;&gt;Keep it simple&lt;/h4&gt;
+
+&lt;p&gt;I knew an animator who always worried too much about details, while the essence of his scenes were weak.&lt;/p&gt;
+
+&lt;p&gt;Even when directed to focus on what mattered, this guy still got lost. As soon as the supervisor asked for a stronger pose, a fear of messing something up and getting it worse would pop up.&lt;/p&gt;
+
+&lt;p&gt;That guy was me.&lt;/p&gt;
+
+&lt;p&gt;Bringing back the bouncing ball, physically, proved itself to be a way to faster develop the critical eye.&lt;/p&gt;
+
+&lt;p&gt;It makes it easier to &lt;strong&gt;feel&lt;/strong&gt; what can be improved. And there is less fear of pushing the animation and exploring.&lt;/p&gt;
+
+&lt;p&gt;Plus, the scene is lighter with just a ball.&lt;/p&gt;
+
+&lt;p&gt;So use of the bouncing ball to avoid distractions: forget about that elbow crossing the mesh, those curled up fingers, that foot being left behind, those cross-eyed gaze.&lt;/p&gt;
+
+&lt;p&gt;All this stuff steal your attention; it takes away your focus.&lt;/p&gt;
+
+&lt;p&gt;The bouncing ball is impassive.&lt;/p&gt;
+
+&lt;p&gt;But it&amp;rsquo;s your friend. Let it help you.&lt;/p&gt;
+
+&lt;p&gt;&lt;video autoplay loop muted controls&gt;&lt;source type=&#34;video/mp4&#34; src=&#34;http://www.scatena.tv/vid/blog/bouncing_badmocap1.mp4&#34;&gt;&lt;/video&gt;
+&lt;video autoplay loop muted controls&gt;&lt;source type=&#34;video/mp4&#34; src=&#34;http://www.scatena.tv/vid/blog/bouncing_badmocap2.mp4&#34;&gt;&lt;/video&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;center-using-the-bouncing-ball-to-turn-bad-mocap-into-something-more-interesting-center:64362d7a43b71d3a1ea4ef5d1189b67d&#34;&gt;&lt;center&gt; Using the bouncing ball to turn bad mocap into something more interesting &lt;/center&gt;&lt;/h6&gt;
+
+&lt;h4 id=&#34;two-steps-forward-one-step-back:64362d7a43b71d3a1ea4ef5d1189b67d&#34;&gt;Two steps forward, one step back&lt;/h4&gt;
+
+&lt;p&gt;For those starting from a blank scene it is easy, maybe natural, to keep in mind the essence of the movement.&lt;/p&gt;
+
+&lt;p&gt;But with the increased use of mocap, it is required from the animator highly developed eyes - knowing precisely what to use and what to throw away. Something that can only come through experience.&lt;/p&gt;
+
+&lt;p&gt;So adding the bouncing ball to the scene may look like extra work.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&amp;ldquo;I don&amp;rsquo;t have time for this.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;What you don&amp;rsquo;t have time for is to fix 30 poses on a character with 47 controllers just to realize you&amp;rsquo;re left with a dull scene in your hand.&lt;/p&gt;
+
+&lt;p&gt;This laziness to take a step back and see the big picture is what makes most of recent animation to look generic, lifeless.&lt;/p&gt;
+
+&lt;p&gt;It is increasingly easier to get good references (mocap or video), and it is up to the animator to convey his vision, to add some spices.&lt;/p&gt;
+
+&lt;p&gt;The bouncing ball is a way to explore faster, to see what&amp;rsquo;s wrong faster, to correct it faster, to &lt;strong&gt;improve&lt;/strong&gt; faster.&lt;/p&gt;
+
+&lt;p&gt;It helps you to let go of worries and to become free to dare &amp;ndash; and this is something good.&lt;/p&gt;
+
+&lt;p&gt;If you manage to convey the core emotion of your scene with a simple bouncing ball, it will make the final result so much stronger and so much more enjoyable.&lt;/p&gt;
+
+&lt;p&gt;#### It is just a tool&lt;/p&gt;
+
+&lt;p&gt;The bouncing ball is no magic answer to anything. But it is something at your disposal.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I&lt;/strong&gt; made great improvements on my &lt;strong&gt;feel&lt;/strong&gt; for good animation going back to the most fundamental animation exercise.&lt;/p&gt;
+
+&lt;p&gt;And I&amp;rsquo;ve used this method with some colleagues who were learning and noticed a clear progress.&lt;/p&gt;
+
+&lt;p&gt;You must keep in mind that it is only part of the process. Something that &lt;strong&gt;can&lt;/strong&gt; help and &lt;strong&gt;shouldn&amp;rsquo;t&lt;/strong&gt; take too long. The bouncing ball is a shortcut to what is essential, not a tortuous detour.&lt;/p&gt;
+
+&lt;p&gt;So I vote for the return of the bouncing ball.&lt;/p&gt;
+
+&lt;p&gt;And let&amp;rsquo;s add details later.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

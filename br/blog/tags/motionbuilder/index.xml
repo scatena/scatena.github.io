@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Motionbuilder on Paulo Scatena</title>
+    <link>http://www.scatena.tv/br/blog/tags/motionbuilder/</link>
+    <description>Recent content in Motionbuilder on Paulo Scatena</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Fri, 08 Apr 2016 19:49:21 -0200</lastBuildDate>
+    <atom:link href="http://www.scatena.tv/br/blog/tags/motionbuilder/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Dicas &amp; Truques MoBu - Mouse Capture</title>
+      <link>http://www.scatena.tv/br/blog/2016/04/08/dicas--truques-mobu---mouse-capture</link>
+      <pubDate>Fri, 08 Apr 2016 19:49:21 -0200</pubDate>
+      
+      <guid>http://www.scatena.tv/br/blog/2016/04/08/dicas--truques-mobu---mouse-capture</guid>
+      <description>&lt;p&gt;Atendendo a um pedido, vou aqui compartilhar uma técnica para MotionBuilder de como &amp;ldquo;rascunhar&amp;rdquo; animação capturando o movimento do seu mouse ou tablet.&lt;/p&gt;
+
+&lt;p&gt;Além de ser útil para se trabalhar com o método da &lt;em&gt;bouncing ball&lt;/em&gt; que compartilhei no último post, o acesso ao mouse ou tablet dentro do programa pode ser extremamente útil para performances em tempo real.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//player.vimeo.com/video/162125346&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;p&gt;Logo vou compartilhar o mesmo processo para Maya!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

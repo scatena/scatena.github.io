@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Motionbuilder on Paulo Scatena</title>
+    <link>http://www.scatena.tv/blog/tags/motionbuilder/</link>
+    <description>Recent content in Motionbuilder on Paulo Scatena</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Apr 2016 19:49:21 -0200</lastBuildDate>
+    <atom:link href="http://www.scatena.tv/blog/tags/motionbuilder/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>MoBu Tips &amp; Tricks - Mouse Capture</title>
+      <link>http://www.scatena.tv/blog/2016/04/08/mobu-tips--tricks---mouse-capture</link>
+      <pubDate>Fri, 08 Apr 2016 19:49:21 -0200</pubDate>
+      
+      <guid>http://www.scatena.tv/blog/2016/04/08/mobu-tips--tricks---mouse-capture</guid>
+      <description>&lt;p&gt;In response to a friend&amp;rsquo;s request, I&amp;rsquo;m sharing a way for roughing in animation using the movement from your mouse or tablet in MotionBuilder.&lt;/p&gt;
+
+&lt;p&gt;Besides being helpful for the bouncing ball workflow I mentioned in my last post, having access to your mouse or tablet within MotionBuilder can be a useful resource for live performances.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//player.vimeo.com/video/162125908&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;p&gt;I&amp;rsquo;ll soon be sharing a way to this in Maya!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
