@@ -130,6 +130,7 @@ URL:http://w3layouts.com
 						<li data-target="#slideCarousel" data-slide-to="1"></li>
 						<li data-target="#slideCarousel" data-slide-to="2"></li>
 						<li data-target="#slideCarousel" data-slide-to="3"></li>
+						<li data-target="#slideCarousel" data-slide-to="4"></li>
 					</ol>
 
 					<!-- Wrapper for slides -->
@@ -138,7 +139,16 @@ URL:http://w3layouts.com
 						</div>
 						<div class="item active">
 							<div class="js-video widescreen">
-								<iframe id="player1" class="center-block" src="https://player.vimeo.com/video/154916848?api=1&amp;color=44b5e7&amp;byline=0&amp;portrait=0&amp;player_id=player1" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								<iframe id="player1" class="center-block" src="https://player.vimeo.com/video/163474228?api=1&amp;color=44b5e7&amp;byline=0&amp;portrait=0&amp;player_id=player1" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</div>
+							<div class="carousel-icon">
+								<li><a class="bubble" tabindex="0" role="button" title="Fleap" data-toggle="popover" data-placement="top" data-content="A short stopmotion animated film."><i class="fa fa-info"></i></a></li>
+								<li><a href="https://vimeo.com/163474228" target="_blank"><i class="fa fa-external-link"></i></a></li>
+							</div>
+						</div>
+						<div class="item">
+							<div class="js-video widescreen">
+								<iframe id="player2" class="center-block" src="https://player.vimeo.com/video/154916848?api=1&amp;color=44b5e7&amp;byline=0&amp;portrait=0&amp;player_id=player2" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 							</div>
 							<div class="carousel-icon">
 								<li><a class="bubble" tabindex="0" role="button" title="Bad Mocap Day #1" data-toggle="popover" data-placement="top" data-content="Quick experiment animating some cycles based on really bad mocap. Files available for download!"><i class="fa fa-info"></i></a></li>
@@ -147,7 +157,7 @@ URL:http://w3layouts.com
 						</div>
 						<div class="item">
 							<div class="js-video widescreen">
-								<iframe id="player2" class="center-block" src="https://player.vimeo.com/video/150454094?api=1&amp;color=44b5e7&amp;byline=0&amp;portrait=0&amp;player_id=player2" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								<iframe id="player3" class="center-block" src="https://player.vimeo.com/video/150454094?api=1&amp;color=44b5e7&amp;byline=0&amp;portrait=0&amp;player_id=player3" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 							</div>
 							<div class="carousel-icon">
 								<li><a class="bubble" tabindex="0" role="button" title="Heaven's Nest" data-toggle="popover" data-placement="top" data-content="Fully hand drawn animation test inspired by physical theater studies, submitted for 11SecondClub monthly competition."><i class="fa fa-info"></i></a></li>
@@ -156,7 +166,7 @@ URL:http://w3layouts.com
 						</div>
 						<div class="item">
 							<div class="js-video widescreen">
-								<iframe id="player3" class="center-block" src="https://player.vimeo.com/video/120375229?api=1&amp;color=44b5e7&amp;byline=0&amp;portrait=0&amp;player_id=player3" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								<iframe id="player4" class="center-block" src="https://player.vimeo.com/video/120375229?api=1&amp;color=44b5e7&amp;byline=0&amp;portrait=0&amp;player_id=player4" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 							</div>
 							<div class="carousel-icon">
 								<li><a class="bubble" tabindex="0" role="button" title="MoCap Demo Reel" data-toggle="popover" data-trigger="focus" data-placement="top" data-content="Some projects I have worked on as motion capture supervisor and animator."><i class="fa fa-info"></i></a></li>
@@ -165,7 +175,7 @@ URL:http://w3layouts.com
 						</div>
 						<div class="item">
 							<div class="js-video widescreen">
-								<iframe id="player4" class="center-block" src="https://player.vimeo.com/video/70698428?api=1&amp;color=44b5e7&amp;byline=0&amp;portrait=0&amp;player_id=player4" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								<iframe id="player5" class="center-block" src="https://player.vimeo.com/video/70698428?api=1&amp;color=44b5e7&amp;byline=0&amp;portrait=0&amp;player_id=player5" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 							</div>
 							<div class="carousel-icon">
 								<li><a class="bubble" tabindex="0" role="button" title="Character Animation Demo Reel" data-toggle="popover" data-trigger="focus" data-placement="top" data-content="Showreel of animation done on conclusion of Animation Mentor program."><i class="fa fa-info"></i></a></li>
@@ -318,12 +328,16 @@ URL:http://w3layouts.com
 			var iframe4 = $('#player4')[0];
 			var player4 = $f(iframe4);
 
+			var iframe5 = $('#player5')[0];
+			var player5 = $f(iframe5);
+
 			var rgtButton = document.getElementById("right-pause");
 			rgtButton.addEventListener("click", function() {
 				player1.api('pause');
 				player2.api('pause');
 				player3.api('pause');
 				player4.api('pause');
+				player5.api('pause');
 			});
 			var lftButton = document.getElementById("left-pause");
 			lftButton.addEventListener("click", function() {
@@ -331,6 +345,7 @@ URL:http://w3layouts.com
 				player2.api('pause');
 				player3.api('pause');
 				player4.api('pause');
+				player5.api('pause');
 			});
 			var lftButton = document.getElementById("center-pause");
 			lftButton.addEventListener("click", function() {
@@ -338,6 +353,7 @@ URL:http://w3layouts.com
 				player2.api('pause');
 				player3.api('pause');
 				player4.api('pause');
+				player5.api('pause');
 			});
 		});
 	</script>
