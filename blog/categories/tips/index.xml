@@ -6,8 +6,64 @@
     <description>Recent content in Tips on Paulo Scatena</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Apr 2016 19:49:21 -0200</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jun 2016 07:54:12 -0300</lastBuildDate>
     <atom:link href="http://www.scatena.tv/blog/categories/tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Maya Tips &amp; Tricks - Mouse Capture</title>
+      <link>http://www.scatena.tv/blog/2016/06/03/maya-tips--tricks---mouse-capture</link>
+      <pubDate>Fri, 03 Jun 2016 07:54:12 -0300</pubDate>
+      
+      <guid>http://www.scatena.tv/blog/2016/06/03/maya-tips--tricks---mouse-capture</guid>
+      <description>&lt;p&gt;Few people know it, but there&amp;rsquo;s a way for roughing in animation using the movement from your cursor.&lt;/p&gt;
+
+&lt;p&gt;In a &lt;a href=&#34;http://www.scatena.tv/blog/2016/04/08/mobu-tips--tricks---mouse-capture/&#34;&gt;previous post&lt;/a&gt; I shared this technique for MotionBuilder. Now I&amp;rsquo;ll be showing how to do it inside Maya.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//player.vimeo.com/video/169221456&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;p&gt;I used very simple MEL scripts. Some nodes* are deleted to make sure our scene is ready for a clean recording:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$if ( `objExists record1` )
+$    delete record1;
+$if ( `objExists record2` )
+$    delete record2;
+$if ( `objExists record3` )
+$    delete record3;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then all you have to do is pick the attribute you want to control. For translation:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$SetKeyTranslate;
+$recordAttr -at &amp;quot;translateX&amp;quot; -at &amp;quot;translateY&amp;quot; -at &amp;quot;translateZ&amp;quot;;
+$play -record;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For rotation, the unit being used must be radians. The following code assures such condition:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$SetKeyRotate;
+$string $curAngleUnits = `currentUnit -q -a`;
+$currentUnit -a rad;
+$recordAttr -at &amp;quot;rotateX&amp;quot; -at &amp;quot;rotateY&amp;quot; -at &amp;quot;rotateZ&amp;quot;;
+$play -record;
+$currentUnit -a ($curAngleUnits);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Finally, for scale:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$SetKeyScale;
+$recordAttr -at &amp;quot;scaleX&amp;quot; -at &amp;quot;scaleY&amp;quot; -at &amp;quot;scaleZ&amp;quot;;
+$play -record;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s possible to control other attributes, but I recommend using an auxiliary controller, as demonstrated on the second part of the video. This will lead to a better response from the software.&lt;/p&gt;
+
+&lt;p&gt;&lt;sup&gt; * The code looks for and deletes three nodes in the assumption of the user probably controlling up to three axis of movement. But adjustments might be necessary accordingly.  &lt;/sup&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>MoBu Tips &amp; Tricks - Mouse Capture</title>
