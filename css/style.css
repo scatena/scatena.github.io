@@ -77,11 +77,11 @@ nav ul {
 }
 nav li {
 	display: inline-block;
-	margin: 10px 15px;
+	margin: 10px 18px;
 }
 nav li.h_itens{
 	position: relative;
-	top: 1.33em;
+	top: 1.20em;
 	left: 3em;
 	text-transform: uppercase;
 }
@@ -96,7 +96,7 @@ nav li.lang{
 nav li.lang span{
 	display: inline-block;
 	margin: 0 1px;
-	color: #c4ccda;
+	color: #c8ccd4;
 }
 nav li  a {
 	color: #d4deee;
@@ -104,14 +104,14 @@ nav li  a {
 	text-align: center;
 	text-decoration: none;
 	padding: 5px;
-	font-size: 1em;
+	font-size: 1.04em;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
 nav li.lang a{
-	color: #585f6b;
+	color: #959ca8;
 }
 nav li.active a,nav li a:hover, nav li a:focus{
 	text-decoration:underline;
@@ -196,6 +196,9 @@ h1 {
 	letter-spacing: .012em;
 	word-spacing: 0.1em;
 	color: #222a35;
+	line-height: 1em;
+}
+.plain_text p{
 	line-height: 1em;
 }
 .about_text p.first{
@@ -518,6 +521,9 @@ h4 .popover{
 }
 .soc_icons ul li a i.fa-linkedin:hover{
 	background: #0077b5;
+}
+.soc_icons ul li a i.fa-envelope:hover{
+	background: #4472b6;
 }
 /**********/
 
@@ -921,6 +927,9 @@ h4 .popover{
 	.about_text p{
 		line-height: 1.2em;
 	}
+	.plain_text p{
+		line-height: 1.8em;
+	}	
 	/*whois*/
 	.img_thumb1 {
 		width: 10em;
