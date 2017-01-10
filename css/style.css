@@ -525,6 +525,30 @@ h4 .popover{
 .soc_icons ul li a i.fa-envelope:hover{
 	background: #4472b6;
 }
+@font-face{
+  font-family:cg-icons;
+  src:url(/fonts/cg-icons.eot?z5qas7);
+  src:url(/fonts/cg-icons.eot?z5qas7#iefix) format('embedded-opentype'),url(/fonts/cg-icons.ttf?z5qas7) format('truetype'),url(/fonts/cg-icons.woff?z5qas7) format('woff'),url(/fonts/cg-icons.svg?z5qas7#cg-icons) format('svg');
+  font-weight:400;
+  font-style:normal;
+}
+i.cg{
+  font-family:cg-icons!important;
+  speak:none;
+  font-style:normal;
+  display: inline-block;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.cg-artstation:before{
+  content:"\e900";
+}
+.soc_icons ul li a i.cg-artstation:hover{
+	background: #12adee;
+}
+
 /**********/
 
 /* details */
