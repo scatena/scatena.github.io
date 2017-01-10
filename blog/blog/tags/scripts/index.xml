@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scripts on Paulo Scatena</title>
+    <link>http://www.scatena.tv/blog/tags/scripts/</link>
+    <description>Recent content in Scripts on Paulo Scatena</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 07 Dec 2016 21:27:21 -0200</lastBuildDate>
+    <atom:link href="http://www.scatena.tv/blog/tags/scripts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>MoBu Script - Mirror Characterization</title>
+      <link>http://www.scatena.tv/blog/2016/12/07/mobu-script---mirror-characterization</link>
+      <pubDate>Wed, 07 Dec 2016 21:27:21 -0200</pubDate>
+      
+      <guid>http://www.scatena.tv/blog/2016/12/07/mobu-script---mirror-characterization</guid>
+      <description>&lt;p&gt;Often in MotionBuilder I get a character whose pose needs some adjustments for it to be properly characterized.&lt;/p&gt;
+
+&lt;p&gt;Once I adjust one side, it&amp;rsquo;s always cumbersome to manually repeat everything on the other side.&lt;/p&gt;
+
+&lt;p&gt;So I scripted a simple tool, which gets the bones from the current character definition and mirrors it, be it left to right or right to left.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//player.vimeo.com/video/194746296&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;p&gt;It&amp;rsquo;s just a simple script that I use on my workflow. I cannot assure it&amp;rsquo;s bug free, nor that it works on versions older than 2015. Suggestions and feedback are very welcome, though.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.scatena.tv/tool/mirChar.py&#34;&gt;Download script&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Cheers!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

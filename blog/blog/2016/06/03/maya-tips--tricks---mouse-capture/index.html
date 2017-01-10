@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Maya Tips &amp; Tricks - Mouse Capture &middot; Paulo Scatena</title>
+    <meta name="generator" content="Hugo 0.15" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Paulo Scatena">
+    
+      <meta name="description" content="It&#39;s me blog">
+    
+    
+    <link rel="icon" href="http://www.scatena.tv/blog/favicon.ico">
+    <link rel="apple-touch-icon" href="http://www.scatena.tv/blog/apple-touch-icon.png" />
+    <link rel="stylesheet" href="http://www.scatena.tv/blog/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <meta property="og:title" content="Maya Tips &amp; Tricks - Mouse Capture" />
+<meta property="og:description" content="Few people know it, but there&rsquo;s a way for roughing in animation using the movement from your cursor. In a previous post I shared this technique for MotionBuilder. Now I&rsquo;ll be showing how to do it inside Maya. I used very simple MEL scripts. Some nodes* are deleted to make sure our scene is ready for a clean recording: $if ( `objExists record1` ) $ delete record1; $if ( `objExists record2` ) $ delete record2; $if ( `objExists record3` ) $ delete record3; Then all you have to do is pick the attribute you want to control." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.scatena.tv/blog/2016/06/03/maya-tips--tricks---mouse-capture" />
+
+
+<meta property="og:updated_time" content="2016-06-03T07:54:12-03:00"/>
+
+
+
+
+
+
+
+
+
+
+    
+    
+<meta itemprop="name" content="Maya Tips &amp; Tricks - Mouse Capture">
+<meta itemprop="description" content="Few people know it, but there&rsquo;s a way for roughing in animation using the movement from your cursor. In a previous post I shared this technique for MotionBuilder. Now I&rsquo;ll be showing how to do it inside Maya. I used very simple MEL scripts. Some nodes* are deleted to make sure our scene is ready for a clean recording: $if ( `objExists record1` ) $ delete record1; $if ( `objExists record2` ) $ delete record2; $if ( `objExists record3` ) $ delete record3; Then all you have to do is pick the attribute you want to control.">
+
+
+<meta itemprop="dateModified" content="2016-06-03T07:54:12-03:00" />
+<meta itemprop="wordCount" content="220">
+
+
+
+<meta itemprop="keywords" content="thoughts,tips,tools,animation,blog,diy,heavens-nest,maya,motionbuilder,scripts,workflow," />
+
+    
+
+  <meta name="twitter:card" content="summary"/>
+
+
+
+<meta name="twitter:title" content="Maya Tips &amp; Tricks - Mouse Capture"/>
+<meta name="twitter:description" content="Few people know it, but there&rsquo;s a way for roughing in animation using the movement from your cursor. In a previous post I shared this technique for MotionBuilder. Now I&rsquo;ll be showing how to do it inside Maya. I used very simple MEL scripts. Some nodes* are deleted to make sure our scene is ready for a clean recording: $if ( `objExists record1` ) $ delete record1; $if ( `objExists record2` ) $ delete record2; $if ( `objExists record3` ) $ delete record3; Then all you have to do is pick the attribute you want to control."/>
+
+
+
+</head>
+<body>
+<div class="container">
+
+
+<div id="container">
+	<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="http://www.scatena.tv/blog/" id="logo"><i class="logo" style="background-image: url('http://www.scatena.tv/blog/css/images/logo.png')"></i></a>
+      <nav id="sub-nav">
+        <div class="profile" id="profile-nav">
+          <a id="profile-anchor" href="javascript:;"><img class="avatar" src="http://www.scatena.tv/blog/css/images/avatar.png"><i class="fa fa-caret-down"></i></a>
+        </div>
+      </nav>
+      <nav id="main-nav">
+         
+           
+            <a class="main-nav-link" href="http://www.scatena.tv/br/blog/2016/06/03/dicas--truques-maya---mouse-capture/">-Pt-Br-</a>
+          
+        
+          <span class="main-nav-link">-En-</span>
+      </nav>
+    </div>
+  </div>
+
+</header>
+
+   	
+   	<div class="outer">
+	    <aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      <img id="avatar" src="http://www.scatena.tv/blog/css/images/avatar.png">
+      <h2 id="name">Paulo Scatena</h2>
+      <h3 id="title">Explorer of too many interests</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>São Paulo / Brazil</span>
+      
+          <a class="profile-link" href="http://www.scatena.tv/blog/">
+              Blog
+          </a>
+      
+      
+          <a class="profile-link" href="http://www.scatena.tv/about.html">
+              About
+          </a>
+      
+      
+          <a class="profile-link" href="http://www.scatena.tv">
+              Website
+          </a>
+      
+    </div>
+    <div class="contact-info profile-block">
+      <table class="contact-list">
+        <tr>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//vimeo.com/scatena" target="_blank" title="Vimeo"><i class="fa fa-vimeo"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//linkedin.com/in/phscatena" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//facebook.com/phscatena" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></td>
+
+
+
+
+          <td><a href="" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</aside>
+
+	    <section id="main">
+    <article id="blogpost" class="article article-type-page" itemscope="" itemprop="blogPost">
+        <div class="article-inner">
+            
+                
+                <img src="http://www.scatena.tv/blog/banners/maya_moucap.jpg" class="article-banner">
+                
+            
+
+            <header class="article-header">
+    <a href="http://www.scatena.tv/blog/2016/06/03/maya-tips--tricks---mouse-capture">
+    <h1 class="article-title" itemprop="name">
+        Maya Tips &amp; Tricks - Mouse Capture
+    </h1>
+    </a>
+    <div class="article-meta">
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2016-06-03 07:54:12 -0300 BRT" itemprop="datePublished">Jun 3, 2016</time>
+            &middot;
+            220
+            words
+            &middot;
+            2
+            minute read
+        </div>
+
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                <a class="article-category-link" href="http://www.scatena.tv/blog/categories/tips">tips</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                <a class="article-category-link" href="http://www.scatena.tv/blog/tags/maya">maya</a>
+                &middot;
+                
+                <a class="article-category-link" href="http://www.scatena.tv/blog/tags/animation">animation</a>
+                &middot;
+                
+                <a class="article-category-link" href="http://www.scatena.tv/blog/tags/workflow">workflow</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+            <div class="article-entry" itemprop="articleBody">
+                <p>Few people know it, but there&rsquo;s a way for roughing in animation using the movement from your cursor.</p>
+
+<p>In a <a href="http://www.scatena.tv/blog/2016/04/08/mobu-tips--tricks---mouse-capture/">previous post</a> I shared this technique for MotionBuilder. Now I&rsquo;ll be showing how to do it inside Maya.</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+  <iframe src="//player.vimeo.com/video/169221456" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+ </div>
+
+
+<p>I used very simple MEL scripts. Some nodes* are deleted to make sure our scene is ready for a clean recording:</p>
+
+<pre><code>$if ( `objExists record1` )
+$    delete record1;
+$if ( `objExists record2` )
+$    delete record2;
+$if ( `objExists record3` )
+$    delete record3;
+</code></pre>
+
+<p>Then all you have to do is pick the attribute you want to control. For translation:</p>
+
+<pre><code>$SetKeyTranslate;
+$recordAttr -at &quot;translateX&quot; -at &quot;translateY&quot; -at &quot;translateZ&quot;;
+$play -record;
+</code></pre>
+
+<p>For rotation, the unit being used must be radians. The following code assures such condition:</p>
+
+<pre><code>$SetKeyRotate;
+$string $curAngleUnits = `currentUnit -q -a`;
+$currentUnit -a rad;
+$recordAttr -at &quot;rotateX&quot; -at &quot;rotateY&quot; -at &quot;rotateZ&quot;;
+$play -record;
+$currentUnit -a ($curAngleUnits);
+</code></pre>
+
+<p>Finally, for scale:</p>
+
+<pre><code>$SetKeyScale;
+$recordAttr -at &quot;scaleX&quot; -at &quot;scaleY&quot; -at &quot;scaleZ&quot;;
+$play -record;
+</code></pre>
+
+<p>It&rsquo;s possible to control other attributes, but I recommend using an auxiliary controller, as demonstrated on the second part of the video. This will lead to a better response from the software.</p>
+
+<p><sup> * The code looks for and deletes three nodes in the assumption of the user probably controlling up to three axis of movement. But adjustments might be necessary accordingly.  </sup></p>
+
+            </div>
+            <footer class="article-footer">
+    <a data-url="http://www.scatena.tv/blog/2016/06/03/maya-tips--tricks---mouse-capture" data-id="5c02e2b96d83f9e476b30bec5cfb27e9" class="article-share-link">
+        Share
+    </a>
+    
+    <a href="http://www.scatena.tv/blog/2016/06/03/maya-tips--tricks---mouse-capture/#disqus_thread" class="article-comment-link">
+        Comments
+    </a>
+    
+</footer>
+
+        </div>
+
+        
+<nav id="article-nav">
+    
+    <a href="http://www.scatena.tv/blog/2016/04/08/mobu-tips--tricks---mouse-capture" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Older
+      </strong>
+      <div class="article-nav-title">MoBu Tips &amp; Tricks - Mouse Capture</div>
+    </a>
+    
+
+    
+    <a href="http://www.scatena.tv/blog/2016/12/07/mobu-script---mirror-characterization" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Newer
+      </strong>
+      <div class="article-nav-title">MoBu Script - Mirror Characterization</div>
+    </a>
+    
+</nav>
+
+
+    </article>
+    <section id="comments">
+        <div id="disqus_thread">
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'scatena';
+    var disqus_identifier = 'http:\/\/www.scatena.tv\/blog\/2016\/06\/03\/maya-tips--tricks---mouse-capture';
+    var disqus_title = 'Maya Tips \x26 Tricks - Mouse Capture';
+    var disqus_url = 'http:\/\/www.scatena.tv\/blog\/2016\/06\/03\/maya-tips--tricks---mouse-capture';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+    </section>
+
+</section>
+
+	    <aside id="sidebar">
+	<div class="google_search">
+		<script>
+		  (function() {
+		    var cx = '006170203056564993741:gdehfamtcf4';
+		    var gcse = document.createElement('script');
+		    gcse.type = 'text/javascript';
+		    gcse.async = true;
+		    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+		        '//cse.google.com/cse.js?cx=' + cx;
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(gcse, s);
+		  })();
+		</script>
+		<gcse:search></gcse:search>
+	</div>
+    
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="http://www.scatena.tv/blog/categories/thoughts">
+                    thoughts
+                </a>
+                <span class="category-list-count">4</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="http://www.scatena.tv/blog/categories/tips">
+                    tips
+                </a>
+                <span class="category-list-count">3</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="http://www.scatena.tv/blog/categories/tools">
+                    tools
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+    
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tags
+    </h3>
+    <div class="widget tagcloud">
+        
+        <a href="http://www.scatena.tv/blog/tags/animation" style="font-size: 12px;">animation</a>
+        
+        <a href="http://www.scatena.tv/blog/tags/blog" style="font-size: 12px;">blog</a>
+        
+        <a href="http://www.scatena.tv/blog/tags/diy" style="font-size: 12px;">diy</a>
+        
+        <a href="http://www.scatena.tv/blog/tags/heavens-nest" style="font-size: 12px;">heavens-nest</a>
+        
+        <a href="http://www.scatena.tv/blog/tags/maya" style="font-size: 12px;">maya</a>
+        
+        <a href="http://www.scatena.tv/blog/tags/motionbuilder" style="font-size: 12px;">motionbuilder</a>
+        
+        <a href="http://www.scatena.tv/blog/tags/scripts" style="font-size: 12px;">scripts</a>
+        
+        <a href="http://www.scatena.tv/blog/tags/workflow" style="font-size: 12px;">workflow</a>
+        
+    </div>
+</div>
+
+
+
+
+
+</aside>
+
+	</div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017
+      Scatena | Powered by <a href="//gohugo.io">Hugo</a>. Based on a theme by <a href="http://github.com/ppoffice">PPOffice</a>.
+    </div>
+  </div>
+  <div id="toTop" class="fa fa-arrow-up"></div>
+</footer>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-73966935-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://www.scatena.tv/blog/fancybox/jquery.fancybox.pack.js"></script>
+<script src="http://www.scatena.tv/blog/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<!-- MathJax -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>

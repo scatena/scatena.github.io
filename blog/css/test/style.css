@@ -527,8 +527,8 @@ h4 .popover{
 }
 @font-face{
   font-family:cg-icons;
-  src:url(/fonts/cg-icons.eot?z5qas7);
-  src:url(/fonts/cg-icons.eot?z5qas7#iefix) format('embedded-opentype'),url(/fonts/cg-icons.ttf?z5qas7) format('truetype'),url(/fonts/cg-icons.woff?z5qas7) format('woff'),url(/fonts/cg-icons.svg?z5qas7#cg-icons) format('svg');
+  src:url(../../fonts/cg-icons.eot?z5qas7);
+  src:url(../../fonts/cg-icons.eot?z5qas7#iefix) format('embedded-opentype'),url(../../fonts/cg-icons.ttf?z5qas7) format('truetype'),url(../../fonts/cg-icons.woff?z5qas7) format('woff'),url(../../fonts/cg-icons.svg?z5qas7#cg-icons) format('svg');
   font-weight:400;
   font-style:normal;
 }
