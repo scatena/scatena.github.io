@@ -6,8 +6,34 @@
     <description>Recent content in Tips on Paulo Scatena</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Jun 2016 07:54:12 -0300</lastBuildDate>
+    <lastBuildDate>Tue, 15 Nov 2016 17:23:28 -0300</lastBuildDate>
     <atom:link href="http://www.scatena.tv/blog/categories/tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Interactive Installation using Isadora</title>
+      <link>http://www.scatena.tv/blog/2016/11/15/interactive-installation-using-isadora</link>
+      <pubDate>Tue, 15 Nov 2016 17:23:28 -0300</pubDate>
+      
+      <guid>http://www.scatena.tv/blog/2016/11/15/interactive-installation-using-isadora</guid>
+      <description>&lt;p&gt;Some time ago, during a video mapping workshop with Belgian artist &lt;a href=&#34;http://www.thomasisrael.be/&#34;&gt;Thomas Israël&lt;/a&gt;, I created a very simple interactive installation, using &lt;a href=&#34;https://troikatronix.com/&#34;&gt;Isadora&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Its concept, not worrying about mapping itself, was using a camera as a sensor for presence and so generating colored cubes that &amp;ldquo;avoided&amp;rdquo; the person. Something like this:&lt;/p&gt;
+
+&lt;video autoplay loop muted controls&gt;&lt;source type=&#34;video/mp4&#34; src=&#34;http://www.scatena.tv/vid/blog/isacubes_demo.mp4&#34;&gt;&lt;/video&gt;
+
+&lt;p&gt;It also features a &lt;a href=&#34;https://www.youtube.com/watch?v=1h1uVjGk1eA&#34;&gt;penguin&lt;/a&gt; walking across the screen, as a cute bonus.&lt;/p&gt;
+
+&lt;p&gt;I recently recreated this material so I could share it.&lt;/p&gt;
+
+&lt;p&gt;It serves as a basic tutorial on motion tracking and responsive media.&lt;/p&gt;
+
+&lt;p&gt;Both the Isadora file (v1.3) and the videos used in the installation are available for download &lt;a href=&#34;http://www.scatena.tv/data/IsaSquareEn.zip&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Despite its simplicity, even Thomas found it fun:&lt;/p&gt;
+
+&lt;video controls&gt;&lt;source type=&#34;video/mp4&#34; src=&#34;http://www.scatena.tv/vid/blog/isadora_thomas.mp4&#34;&gt;&lt;/video&gt;
+</description>
+    </item>
     
     <item>
       <title>Maya Tips &amp; Tricks - Mouse Capture</title>

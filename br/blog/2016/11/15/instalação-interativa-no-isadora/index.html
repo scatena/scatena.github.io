@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Instalação interativa no Isadora &middot; Paulo Scatena</title>
+    <meta name="generator" content="Hugo 0.15" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Paulo Scatena">
+    
+      <meta name="description" content="It&#39;s me blog">
+    
+    
+    <link rel="icon" href="http://www.scatena.tv/br/blog/favicon.ico">
+    <link rel="apple-touch-icon" href="http://www.scatena.tv/br/blog/apple-touch-icon.png" />
+    <link rel="stylesheet" href="http://www.scatena.tv/br/blog/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <meta property="og:title" content="Instalação interativa no Isadora" />
+<meta property="og:description" content="Um tempo atrás, durante um workshop de video mapping com o artista belga Thomas Israël, eu programei uma instalação interativa bem simples, usando o Isadora. O conceito, sem se preocupar com mapeamentos, era usar uma câmera como sensor de presença, e com isso, poder gerar cubos coloridos que &ldquo;fugiam&rdquo; da pessoa. Basicamente, assim: Há também um pinguim que cruza a tela, como um bônus bonitinho. Recentemente eu recriei esse material pra poder compartilhá-lo." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.scatena.tv/br/blog/2016/11/15/instala%C3%A7%C3%A3o-interativa-no-isadora" />
+
+
+<meta property="og:updated_time" content="2016-11-15T17:23:28-03:00"/>
+
+
+
+
+
+
+
+
+
+
+    
+    
+<meta itemprop="name" content="Instalação interativa no Isadora">
+<meta itemprop="description" content="Um tempo atrás, durante um workshop de video mapping com o artista belga Thomas Israël, eu programei uma instalação interativa bem simples, usando o Isadora. O conceito, sem se preocupar com mapeamentos, era usar uma câmera como sensor de presença, e com isso, poder gerar cubos coloridos que &ldquo;fugiam&rdquo; da pessoa. Basicamente, assim: Há também um pinguim que cruza a tela, como um bônus bonitinho. Recentemente eu recriei esse material pra poder compartilhá-lo.">
+
+
+<meta itemprop="dateModified" content="2016-11-15T17:23:28-03:00" />
+<meta itemprop="wordCount" content="111">
+
+
+
+<meta itemprop="keywords" content="dicas,ferramentas,pensamentos,animação,blog,diy,heavens-nest,isadora,maya,motionbuilder,scripts,workflow," />
+
+    
+
+  <meta name="twitter:card" content="summary"/>
+
+
+
+<meta name="twitter:title" content="Instalação interativa no Isadora"/>
+<meta name="twitter:description" content="Um tempo atrás, durante um workshop de video mapping com o artista belga Thomas Israël, eu programei uma instalação interativa bem simples, usando o Isadora. O conceito, sem se preocupar com mapeamentos, era usar uma câmera como sensor de presença, e com isso, poder gerar cubos coloridos que &ldquo;fugiam&rdquo; da pessoa. Basicamente, assim: Há também um pinguim que cruza a tela, como um bônus bonitinho. Recentemente eu recriei esse material pra poder compartilhá-lo."/>
+
+
+
+</head>
+<body>
+<div class="container">
+
+
+<div id="container">
+	<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="http://www.scatena.tv/br/blog/" id="logo"><i class="logo" style="background-image: url('http://www.scatena.tv/br/blog/css/images/logo.png')"></i></a>
+      <nav id="sub-nav">
+        <div class="profile" id="profile-nav">
+          <a id="profile-anchor" href="javascript:;"><img class="avatar" src="http://www.scatena.tv/br/blog/css/images/avatar.png"><i class="fa fa-caret-down"></i></a>
+        </div>
+      </nav>
+      <nav id="main-nav">
+         
+           
+            <a class="main-nav-link" href="http://www.scatena.tv/blog/2016/11/15/interactive-installation-using-isadora/">-En-</a>
+          
+        
+          <span class="main-nav-link">-Pt-Br-</span>
+      </nav>
+    </div>
+  </div>
+
+</header>
+
+   	
+   	<div class="outer">
+	    <aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      <img id="avatar" src="http://www.scatena.tv/br/blog/css/images/avatar.png">
+      <h2 id="name">Paulo Scatena</h2>
+      <h3 id="title">Explorador de coisa demais.</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>São Paulo / Brasil</span>
+      
+          <a class="profile-link" href="http://www.scatena.tv/br/blog/">
+              Blog
+          </a>
+      
+      
+          <a class="profile-link" href="http://www.scatena.tv/br/sobre.html">
+              Sobre
+          </a>
+      
+      
+          <a class="profile-link" href="http://www.scatena.tv/br/">
+              Website
+          </a>
+      
+    </div>
+    <div class="contact-info profile-block">
+      <table class="contact-list">
+        <tr>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//vimeo.com/scatena" target="_blank" title="Vimeo"><i class="fa fa-vimeo"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//linkedin.com/in/phscatena" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//facebook.com/phscatena" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></td>
+
+
+
+
+          <td><a href="" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</aside>
+
+	    <section id="main">
+    <article id="blogpost" class="article article-type-page" itemscope="" itemprop="blogPost">
+        <div class="article-inner">
+            
+                
+                <img src="http://www.scatena.tv/br/blog/banners/thomas_isadora.jpg" class="article-banner">
+                
+            
+
+            <header class="article-header">
+    <a href="http://www.scatena.tv/br/blog/2016/11/15/instala%C3%A7%C3%A3o-interativa-no-isadora">
+    <h1 class="article-title" itemprop="name">
+        Instalação interativa no Isadora
+    </h1>
+    </a>
+    <div class="article-meta">
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2016-11-15 17:23:28 -0300 -0300" itemprop="datePublished">15/11/2016</time>
+            &middot;
+            111
+            palavras
+            &middot;
+            1
+            minutos de leitura
+        </div>
+
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                <a class="article-category-link" href="http://www.scatena.tv/br/blog/categories/dicas">dicas</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                <a class="article-category-link" href="http://www.scatena.tv/br/blog/tags/isadora">isadora</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+            <div class="article-entry" itemprop="articleBody">
+                <p>Um tempo atrás, durante um workshop de video mapping com o artista belga <a href="http://www.thomasisrael.be/">Thomas Israël</a>, eu programei uma instalação interativa bem simples, usando o <a href="https://troikatronix.com/">Isadora</a>.</p>
+
+<p>O conceito, sem se preocupar com mapeamentos, era usar uma câmera como sensor de presença, e com isso, poder gerar cubos coloridos que &ldquo;fugiam&rdquo; da pessoa. Basicamente, assim:</p>
+
+<video autoplay loop muted controls><source type="video/mp4" src="http://www.scatena.tv/vid/blog/isacubes_demo.mp4"></video>
+
+<p>Há também um <a href="https://www.youtube.com/watch?v=1h1uVjGk1eA">pinguim</a> que cruza a tela, como um bônus bonitinho.</p>
+
+<p>Recentemente eu recriei esse material pra poder compartilhá-lo.</p>
+
+<p>Serve como um tutorial bem básico de sensoreamento e geração interativa.</p>
+
+<p>Tanto o arquivo de Isadora (v1.3) como alguns vídeos que o acompanham podem ser baixados <a href="http://www.scatena.tv/data/IsaSquarePtBr.zip">aqui</a>.</p>
+
+<p>E mesmo tão simples, o próprio Thomas achou o projeto divertido:</p>
+
+<video controls><source type="video/mp4" src="http://www.scatena.tv/vid/blog/isadora_thomas.mp4"></video>
+
+            </div>
+            <footer class="article-footer">
+    <a data-url="http://www.scatena.tv/br/blog/2016/11/15/instala%C3%A7%C3%A3o-interativa-no-isadora" data-id="767fac9c95f7c2dccca8f4e5f7d6ab99" class="article-share-link">
+        Compartilhe
+    </a>
+    
+    <a href="http://www.scatena.tv/br/blog/2016/11/15/instala%C3%A7%C3%A3o-interativa-no-isadora/#disqus_thread" class="article-comment-link">
+        Comentários
+    </a>
+    
+</footer>
+
+        </div>
+
+        
+<nav id="article-nav">
+    
+    <a href="http://www.scatena.tv/br/blog/2016/06/03/dicas--truques-maya---mouse-capture" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Anterior
+      </strong>
+      <div class="article-nav-title">Dicas &amp; Truques Maya - Mouse Capture</div>
+    </a>
+    
+
+    
+    <a href="http://www.scatena.tv/br/blog/2016/12/07/script-pra-mobu---espelhar-caracteriza%C3%A7%C3%A3o" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Próximo
+      </strong>
+      <div class="article-nav-title">Script pra MoBu - Espelhar Caracterização</div>
+    </a>
+    
+</nav>
+
+
+    </article>
+    <section id="comments">
+        <div id="disqus_thread">
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'scatena';
+    var disqus_identifier = 'http:\/\/www.scatena.tv\/br\/blog\/2016\/11\/15\/instala%C3%A7%C3%A3o-interativa-no-isadora';
+    var disqus_title = 'Instalação interativa no Isadora';
+    var disqus_url = 'http:\/\/www.scatena.tv\/br\/blog\/2016\/11\/15\/instala%C3%A7%C3%A3o-interativa-no-isadora';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+    </section>
+
+</section>
+
+	    <aside id="sidebar">
+	<div class="google_search">
+		<script>
+		  (function() {
+		    var cx = '006170203056564993741:gdehfamtcf4';
+		    var gcse = document.createElement('script');
+		    gcse.type = 'text/javascript';
+		    gcse.async = true;
+		    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+		        '//cse.google.com/cse.js?cx=' + cx;
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(gcse, s);
+		  })();
+		</script>
+		<gcse:search></gcse:search>
+	</div>
+    
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">Categorias</h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="http://www.scatena.tv/br/blog/categories/dicas">
+                    dicas
+                </a>
+                <span class="category-list-count">4</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="http://www.scatena.tv/br/blog/categories/ferramentas">
+                    ferramentas
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="http://www.scatena.tv/br/blog/categories/pensamentos">
+                    pensamentos
+                </a>
+                <span class="category-list-count">4</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+    
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tags
+    </h3>
+    <div class="widget tagcloud">
+        
+        <a href="http://www.scatena.tv/br/blog/tags/anima%c3%a7%c3%a3o" style="font-size: 12px;">animação</a>
+        
+        <a href="http://www.scatena.tv/br/blog/tags/blog" style="font-size: 12px;">blog</a>
+        
+        <a href="http://www.scatena.tv/br/blog/tags/diy" style="font-size: 12px;">diy</a>
+        
+        <a href="http://www.scatena.tv/br/blog/tags/heavens-nest" style="font-size: 12px;">heavens-nest</a>
+        
+        <a href="http://www.scatena.tv/br/blog/tags/isadora" style="font-size: 12px;">isadora</a>
+        
+        <a href="http://www.scatena.tv/br/blog/tags/maya" style="font-size: 12px;">maya</a>
+        
+        <a href="http://www.scatena.tv/br/blog/tags/motionbuilder" style="font-size: 12px;">motionbuilder</a>
+        
+        <a href="http://www.scatena.tv/br/blog/tags/scripts" style="font-size: 12px;">scripts</a>
+        
+        <a href="http://www.scatena.tv/br/blog/tags/workflow" style="font-size: 12px;">workflow</a>
+        
+    </div>
+</div>
+
+
+
+
+
+</aside>
+
+	</div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017
+      Scatena | Criado em <a href="//gohugo.io">Hugo</a>. Tema-base por <a href="http://github.com/ppoffice">PPOffice</a>.
+    </div>
+  </div>
+  <div id="toTop" class="fa fa-arrow-up"></div>
+</footer>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-73966935-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://www.scatena.tv/br/blog/fancybox/jquery.fancybox.pack.js"></script>
+<script src="http://www.scatena.tv/br/blog/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<!-- MathJax -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>

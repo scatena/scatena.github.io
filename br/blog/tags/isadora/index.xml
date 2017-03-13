@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Isadora on Paulo Scatena</title>
+    <link>http://www.scatena.tv/br/blog/tags/isadora/</link>
+    <description>Recent content in Isadora on Paulo Scatena</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Tue, 15 Nov 2016 17:23:28 -0300</lastBuildDate>
+    <atom:link href="http://www.scatena.tv/br/blog/tags/isadora/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Instalação interativa no Isadora</title>
+      <link>http://www.scatena.tv/br/blog/2016/11/15/instala%C3%A7%C3%A3o-interativa-no-isadora</link>
+      <pubDate>Tue, 15 Nov 2016 17:23:28 -0300</pubDate>
+      
+      <guid>http://www.scatena.tv/br/blog/2016/11/15/instala%C3%A7%C3%A3o-interativa-no-isadora</guid>
+      <description>&lt;p&gt;Um tempo atrás, durante um workshop de video mapping com o artista belga &lt;a href=&#34;http://www.thomasisrael.be/&#34;&gt;Thomas Israël&lt;/a&gt;, eu programei uma instalação interativa bem simples, usando o &lt;a href=&#34;https://troikatronix.com/&#34;&gt;Isadora&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;O conceito, sem se preocupar com mapeamentos, era usar uma câmera como sensor de presença, e com isso, poder gerar cubos coloridos que &amp;ldquo;fugiam&amp;rdquo; da pessoa. Basicamente, assim:&lt;/p&gt;
+
+&lt;video autoplay loop muted controls&gt;&lt;source type=&#34;video/mp4&#34; src=&#34;http://www.scatena.tv/vid/blog/isacubes_demo.mp4&#34;&gt;&lt;/video&gt;
+
+&lt;p&gt;Há também um &lt;a href=&#34;https://www.youtube.com/watch?v=1h1uVjGk1eA&#34;&gt;pinguim&lt;/a&gt; que cruza a tela, como um bônus bonitinho.&lt;/p&gt;
+
+&lt;p&gt;Recentemente eu recriei esse material pra poder compartilhá-lo.&lt;/p&gt;
+
+&lt;p&gt;Serve como um tutorial bem básico de sensoreamento e geração interativa.&lt;/p&gt;
+
+&lt;p&gt;Tanto o arquivo de Isadora (v1.3) como alguns vídeos que o acompanham podem ser baixados &lt;a href=&#34;http://www.scatena.tv/data/IsaSquarePtBr.zip&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;E mesmo tão simples, o próprio Thomas achou o projeto divertido:&lt;/p&gt;
+
+&lt;video controls&gt;&lt;source type=&#34;video/mp4&#34; src=&#34;http://www.scatena.tv/vid/blog/isadora_thomas.mp4&#34;&gt;&lt;/video&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
